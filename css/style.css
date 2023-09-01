@@ -25,6 +25,43 @@ body {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    display: flex;
+    width: 61px;
+    height: 19px;
+    margin-top: 30px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: center top;
+  transition: transform 0.3s ease;
+}
+
+nav li:hover::before {
+    transform: scaleX(1);
+}
+
 a {
     color: inherit;
     text-decoration: none;
