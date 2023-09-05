@@ -67,14 +67,20 @@ nav li:hover::before {
     justify-content:space-between;
     align-items: stretch;
     border: 1px solid var(--main-bg-color);
-    border-radius: 15px;
-    padding: 6px;
+    border-radius: 10px;
     width: 25%;
+    height: 100%;
     margin-bottom: 30px;
   }
   
   .search-icon {
-    background-color: red;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+    width: 12%;
   }
 
   .search-icon i {
@@ -93,6 +99,10 @@ nav li:hover::before {
     color: white;
     border: none;
     border-radius: 4px;
+    border-bottom-right-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
   }
 
   .filter-bar {
@@ -244,6 +254,7 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
