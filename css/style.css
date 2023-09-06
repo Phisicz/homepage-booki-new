@@ -80,7 +80,7 @@ nav li:hover::before {
     align-items: center;
     border-bottom-left-radius: inherit;
     border-top-left-radius: inherit;
-    width: 12%;
+    width: 100%;
   }
 
   .search-icon i {
@@ -92,6 +92,14 @@ nav li:hover::before {
     border: none;
     padding: 8px;
     font-size: 16px;
+  }
+
+  .search-input::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    color: black;
+    text-align: center;
   }
   
   .search-button {
@@ -118,9 +126,9 @@ nav li:hover::before {
 
   .filter-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
+  }
 
 .filtre {
     display: flex;
@@ -137,6 +145,16 @@ nav li:hover::before {
     background-color: var(--filter-bg-color);
 }
 
+.filtre i {
+    font-size: 22px;
+}
+
+.filtre span {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+}
+
 .info-bar {
     display: flex;
     align-items: center;
@@ -145,14 +163,15 @@ nav li:hover::before {
 }
 
 .info-bar i {
-    display: inline-block;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  border: 2px solid #D9D9D9;
-  border-radius: 50%;
-  font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    font-size: 12px;
 }
 
 a {
@@ -277,39 +296,45 @@ a {
 
 
     h2 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 700;
+        line-height: 25px;
     }
 
     p {
         font-size: 16px;
         font-weight: 400;
         line-height: 18px;
-    }
-
-    .infos-search-and-filtres p {
         margin-bottom: 30px;
     }
 
     .search-bar {
         width: 50%;
       }
-    
-    .filtre {
+
+      .filter-bar {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        gap:10px;
+        gap: 20px;
+        text-align: center;
+        height: 100%;
+      }
+       
+      .filter-header h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+
+    .filtre {
+        flex: 1;
+        gap: 10px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
         padding: 15px;
-        font-weight: bold;
         cursor: pointer;
-    }
-
-    .info-bar {
-        display: flex;
-        align-items: center;
-        gap: 10px;
     }
 
     .hebergements-and-populaires {
@@ -347,5 +372,115 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        width: 100%;
+        max-width: 767.98px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: inline-block;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .logo-header {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    .filter-bar h2{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    p, span{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .info-bar{
+        display: inline;
+    }
+
+    .search-bar {
+        border-radius: 15px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      
+      .search-icon {
+        background-color: var(--main-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        width: 15%;
+      }
+    
+      .search-icon i {
+        color: black;
+        text-align: center;
+      }
+
+      .search-button {
+        font-size: 0;
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 0;
+        padding: 15px 16px 15px 16px;
+      }
+
+      .search-button::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f002";
+        font-size: 17px;
+      }
+
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: center;
+        height: 100%;
+      }
+    
+      .filter-header {
+        width: 100%;
+        text-align: left;
+    }
+
+    .filtre {
+        flex: 1;
+        gap: 10px;
+        border: 2px solid #D9D9D9;
+        border-radius: 25px;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .filtre i {
+        font-size: 20px;
+    }
+
+    .filtre span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
 }
