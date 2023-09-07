@@ -18,13 +18,11 @@
     <div class="main-container">
         <header>
             <img class="logo-header"src='/images/logo/booki.png'>
-            <nav>
+            <nav class="navbar">
                 <ul>
                     <li>
                         <a href="#">Hébergements</a>
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <a href="#">Activités</a>
                     </li>
@@ -32,49 +30,49 @@
             </nav>
         </header>
         <main>
-            <div class="infos-search-and-filtres">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
-
-                <div class="search-bar">
-                    <div class="search-icon">
+            <section>
+                <div class="headline">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form class="search-bar" action="" method="post">
+                    <label class="search-icon">
                         <i class="fa-solid fa-location-dot"></i>
-                    </div>
+                    </label>
                     <input type="text" class="search-input" placeholder="Marseille, France">
-                    <button class="search-button">Rechercher</button>
-                </div>
-                <div class="filter-bar">
-                    <div class="filter-header">
-                        <h2>Filtres</h2>
+                    <input type="submit" class="search-button" value="Rechercher">
+                </form>
+                <h2 id="filter-bar-titre-mobile">Filtres</h2>               
+                    <div class="filter-bar">
+                        <h2 id="filter-bar-titre-desktop">Filtres</h2> 
+                        <div class="filtre">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </div>
+                        <div class="filtre">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Nos Pépites</span>
+                        </div>
                     </div>
-                    <div class="filtre">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span>Économique</span>
-                    </div>
-                    <div class="filtre">
-                        <i class="fa-solid fa-person"></i>
-                        <span>Familial</span>
-                    </div>
-                    <div class="filtre">
-                        <i class="fa-solid fa-heart"></i>
-                        <span>Romantique</span>
-                    </div>
-                    <div class="filtre">
-                        <i class="fa-solid fa-fire"></i>
-                        <span>Nos Pépites</span>
-                    </div>
-                </div>
                 <div class="info-bar">
                     <i class="fa-solid fa-info"></i>
                     <span>Plus de 500 logements sont disponibles dans cette ville</span>
                 </div>
-            </div>
+            </section>
             
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
                 </section>
-                <section class="populaires">
+                <aside class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -138,7 +136,7 @@
                             </article>
                         </a>
                     </div>
-                </section>
+                </aside>
             </div>
         </main>
         <footer></footer>
