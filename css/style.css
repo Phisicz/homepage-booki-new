@@ -251,23 +251,88 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+    width: 1340px;
+    height: 611px;
+    gap: 40px;
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    box-sizing: border-box;
+    width: 871px;
+    height: 611px;
+    padding: 30px;
+    gap: 30px;
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
 }
+
+.hebergements-row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 25px;
+  }
+
+  .hebergement {
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 250px;
+    height: 207px;
+    gap: 4px;
+  }
+
+  .hebergement img {
+    width: 250px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .hebergement-info {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 64px;
+    padding: 0px 15px 0px 15px;
+    gap: 8px;
+  }
+
+  .hebergement-nom {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .hebergement-prix {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .hebergement-prix strong {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .grey {
+    color: #e4e4e4;
+  }
+
+  .load-more {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 10px;
+  }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    gap: 30px;
 }
 
 .populaires-title {
@@ -308,6 +373,38 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+.activities {
+    width: 1340px;
+    height: 559px;
+}
+
+.activities-title {
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.activities-cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.activities-card {
+    width: 297px;
+    height: 439px;
+    border-radius: 20px;
+}
+
+.activities-card img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 
@@ -407,7 +504,7 @@ a {
     }
     
     .logo-header {
-        
+
     }
 
     p, span{
