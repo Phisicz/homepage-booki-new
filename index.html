@@ -30,7 +30,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="infos-search-and-filter">
                 <div class="headline">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
@@ -40,7 +40,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                     </label>
                     <input type="text" class="search-input" placeholder="Marseille, France">
-                    <input type="submit" class="search-button" value="Rechercher">
+                    <input type="submit" class="search-button desktop" value="Rechercher">
                 </form>
                 <h2 id="filter-bar-titre-mobile">Filtres</h2>               
                     <div class="filter-bar">
@@ -70,91 +70,97 @@
             
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h2 class="section-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-row">
+                    <h2 class="hebergements-title">Hébergements à Marseille</h2>
+                    <div class="hebergements-liste">
                         <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                            <img src="/images/hebergements/fred-kleber.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
                             <span class="hebergement-nom">Hôtel du port</span>
                             <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>
                         <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                            <img src="/images/hebergements/febrian-zakaria.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
-                            <span class="hebergement-nom">Hôtel du port</span>
-                            <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
+                            <span class="hebergement-nom">Hôtel Chez Amina</span>
+                            <span class="hebergement-prix">Nuit à partir de 96<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>
                         <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                            <img src="/images/hebergements/reisetopia.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
-                            <span class="hebergement-nom">Hôtel du port</span>
-                            <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
+                            <span class="hebergement-nom">Hôtel Les Mouettes</span>
+                            <span class="hebergement-prix">Nuit à partir de 76<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>
                     </div>
-                    <div class="hebergements-row">
+                    <div class="hebergements-liste">
                         <div class="hebergement">
                             <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
-                            <span class="hebergement-nom">Hôtel du port</span>
-                            <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
+                            <span class="hebergement-nom">Hôtel de la Mer</span>
+                            <span class="hebergement-prix">Nuit à partir de 46<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                     <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>
                         <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                            <img src="/images/hebergements/marcus-loke.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
-                            <span class="hebergement-nom">Hôtel du port</span>
-                            <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
+                            <span class="hebergement-nom">Auberge La Canebière</span>
+                            <span class="hebergement-prix">Nuit à partir de 25<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                     <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>
                         <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                            <img src="/images/hebergements/nicate-lee.jpg" alt="Photo Chambre Hôtel du Port">
                             <div class="hebergement-info">
-                            <span class="hebergement-nom">Hôtel du port</span>
-                            <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
+                            <span class="hebergement-nom">Auberge le Panier</span>
+                            <span class="hebergement-prix">Nuit à partir de 23<strong>€</strong></span>
                             <div class="hebergement-note">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                     <span class="sr-only">Note de 4 sur 5</span>
                             </div>
                         </div> 
                     </div>      
@@ -231,27 +237,52 @@
                 <div class="activities-title">
                     <h2>Activités à Marseille</h2>
                 </div>
-                <div class="activities-cards-row">
+                <div class="activities-cards-liste">
                     <div class="activities-card">
-                        <img src="/images/activites/florian-wehde.jpg" alt="Photo du Vieux Port de Marseille">
-                        <span class="activities-cards-name">Vieux-Port</span>
+                        <img src="/images/activites/reno-laithienne.jpg" alt="Photo du Vieux Port de Marseille">
+                            <span class="activities-card-name">Vieux-Port</span>
+                    </div>
+                    <div class="activities-card">
+                        <img src="/images/activites/paul-hermann.jpg" alt="Photo du Vieux Port de Marseille">
+                            <span class="activities-card-name">Fort de Pomègues</span>
+                    </div>
+                    <div class="activities-card">
+                        <img src="/images/activites/kilyan-sockalingum.jpg" alt="Photo du Vieux Port de Marseille">
+                            <span class="activities-card-name">Parc national des Calanques</span>
                     </div>
                     <div class="activities-card">
                         <img src="/images/activites/florian-wehde.jpg" alt="Photo du Vieux Port de Marseille">
-                        <span class="activities-cards-name">Vieux-Port</span>
-                    </div>
-                    <div class="activities-card">
-                        <img src="/images/activites/florian-wehde.jpg" alt="Photo du Vieux Port de Marseille">
-                        <span class="activities-cards-name">Vieux-Port</span>
-                    </div>
-                    <div class="activities-card">
-                        <img src="/images/activites/florian-wehde.jpg" alt="Photo du Vieux Port de Marseille">
-                        <span class="activities-cards-name">Vieux-Port</span>
+                            <span class="activities-card-name">Notre-Dame-de-la-Garde</span>
                     </div>
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="footer-container">
+                <div class="section-footer">
+                    <span class="footer-title">À Propos</span>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+                </div>
+                <div class="section-footer">
+                    <span class="footer-title">Nos hébergements</span>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+                </div>
+                <div class="section-footer">
+                    <span class="footer-title">Assistance</span>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 
