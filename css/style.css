@@ -1,11 +1,26 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0px 30px;
+    animation: fadeIn 2s
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #fadeIn {
+    opacity: 1
+  }
 
 :root {
     --main-color: #0065FC;
@@ -448,12 +463,13 @@ a {
 
 /****** Media queries ***********/
 
-/* Medium devices (tablets, less/equal than 1900px) */
-@media (max-width: 1900px) {
+/* large devices (ultrawide and 4k desktop, less/equal than 2560px) */
+@media (max-width: 2560px) {
 
     body {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 
     .main-container {
@@ -562,10 +578,6 @@ a {
         object-fit: cover;
 
     }
-
-    .activities-card-name {
-        padding
-    }
     
     .footer-container {
         width: 100%;
@@ -574,7 +586,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 
     body {
         margin: 0;
@@ -582,10 +594,10 @@ a {
 
     .main-container {
         width: 100%;
-        max-width: 767px;
+        max-width: 768px;
         box-sizing: border-box;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
     .infos-search-and-filter {
@@ -595,11 +607,14 @@ a {
 
     header {
         display: inline;
-        margin: ;
     }
-    
+
     .logo-header {
         margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        max-width: 100%;
+        height: auto;
     }
  
     .navbar ul {
@@ -619,7 +634,7 @@ a {
         height: 2px;
         width: 100%;
         position: absolute;
-        top: 75px;
+        top: 130px;
         left: 0;
     }
 
@@ -632,7 +647,7 @@ a {
         transform-origin: center top;
         transition: transform 0.3s ease;
         position: absolute;
-        top: 75px;
+        top: 130px;
         left: 0;
       }
       
@@ -643,10 +658,6 @@ a {
     .navbar a::before {
         display: none;
     }
-
-      .info-bar i {
-
-      }
 
     p, span{
         font-size: 16px;
@@ -683,10 +694,10 @@ a {
       }
 
     .search-button::before {
-        content: "\f002"; /* Code Unicode de l'icône que vous souhaitez afficher */
+        content: "\f002";
         font-family: 'Font Awesome 6 Free';
         font-size: 17px;
-        font-weight: 900;
+        font-weight: 400;
     }
 
 
@@ -727,23 +738,30 @@ a {
         text-align: center;
     }
 
+    .hebergements-and-populaires {
+        gap: 0;
+    }
+
     .populaires {
         width: 100%;
         order: 0;
-        padding: 30px 20px;
+        border-radius: 0;
     }
 
     .populaires-cards {
         flex-direction: column;
-        gap: 0px;
     }
 
     .populaires-cards a {
         width: 100%;
     }
 
-    .card {
-        box-sizing: border-box
+    .populaires-title {
+        padding-bottom: 20px;
+    }
+
+    .populaires-cards .card {
+        margin: 0;
     }
 
     .hebergements {
@@ -772,6 +790,7 @@ a {
         order: 3;
         width: 100%;
         padding: 30px;
+        margin: 0;
     }
 
     .activities-cards-liste {
@@ -786,7 +805,9 @@ a {
     
     .footer-container {
         width: 100%;
+        height: 461px;
         flex-direction: column;
         margin-top: 40px;
+        border-radius: 0;
     }
 }
