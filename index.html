@@ -8,16 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body id="fadeIn">
     <div class="main-container">
         <header>
-            <img class="logo-header" src='/images/logo/booki.png'>
+            <img class="logo-header" src='/images/logo/booki.png' alt="Logo Booki">
             <nav class="navbar">
                 <ul>
                     <li>
@@ -35,7 +33,7 @@
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <form class="search-bar" action="" method="post">
+                <form class="search-bar" action="#" method="post">
                     <label class="search-icon">
                         <i class="fa-solid fa-location-dot"></i>
                     </label>
@@ -68,14 +66,14 @@
                 </div>
             </section>
 
-            <div class="hebergements-and-populaires">
-                <section class="hebergements" id="hebergements">
+            <section class="hebergements-and-populaires">
+                <div class="hebergements" id="hebergements">
                     <h2 class="hebergements-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-liste">
-                        <div class="hebergement">
-                            <img src="/images/hebergements/fred-kleber.jpg" alt="Photo Chambre Hôtel du Port">
+                    <div class="hebergements-cards">
+                        <article class="hebergement">
+                            <img src="/images/hebergements/fred-kleber.jpg" alt="Photo de chambre de l'Hôtel du Port">
                             <div class="hebergement-info">
-                                <span class="hebergement-nom">Hôtel du port</span>
+                                <span class="hebergement-nom">Hôtel du Port</span>
                                 <span class="hebergement-prix">Nuit à partir de 52<strong>€</strong></span>
                                 <div class="hebergement-note">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -86,9 +84,9 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="hebergement">
-                            <img src="/images/hebergements/febrian-zakaria.jpg" alt="Photo Chambre Hôtel du Port">
+                        </article>
+                        <article class="hebergement">
+                            <img src="/images/hebergements/febrian-zakaria.jpg" alt="Photo de chambre de l'Hôtel Chez Amina">
                             <div class="hebergement-info">
                                 <span class="hebergement-nom">Hôtel Chez Amina</span>
                                 <span class="hebergement-prix">Nuit à partir de 96<strong>€</strong></span>
@@ -101,9 +99,9 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="hebergement">
-                            <img src="/images/hebergements/reisetopia.jpg" alt="Photo Chambre Hôtel du Port">
+                        </article>
+                        <article class="hebergement">
+                            <img src="/images/hebergements/reisetopia.jpg" alt="Photo de chambre de l'Hôtel Les Mouettes">
                             <div class="hebergement-info">
                                 <span class="hebergement-nom">Hôtel Les Mouettes</span>
                                 <span class="hebergement-prix">Nuit à partir de 76<strong>€</strong></span>
@@ -116,11 +114,9 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="hebergements-liste">
-                        <div class="hebergement">
-                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo Chambre Hôtel du Port">
+                        </article>
+                        <article class="hebergement">
+                            <img src="/images/hebergements/annie-spratt.jpg" alt="Photo de chambre de l'Hôtel de la Mer">
                             <div class="hebergement-info">
                                 <span class="hebergement-nom">Hôtel de la Mer</span>
                                 <span class="hebergement-prix">Nuit à partir de 46<strong>€</strong></span>
@@ -133,9 +129,9 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="hebergement">
-                            <img src="/images/hebergements/marcus-loke.jpg" alt="Photo Chambre Hôtel du Port">
+                        </article>
+                        <article class="hebergement">
+                            <img src="/images/hebergements/marcus-loke.jpg" alt="Photo de chambre de l'Auberge La Canabière">
                             <div class="hebergement-info">
                                 <span class="hebergement-nom">Auberge La Canebière</span>
                                 <span class="hebergement-prix">Nuit à partir de 25<strong>€</strong></span>
@@ -148,9 +144,9 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="hebergement">
-                            <img src="/images/hebergements/nicate-lee.jpg" alt="Photo Chambre Hôtel du Port">
+                        </article>
+                        <article class="hebergement">
+                            <img src="/images/hebergements/nicate-lee.jpg" alt="Photo de chambre de l'Auberge le Panier">
                             <div class="hebergement-info">
                                 <span class="hebergement-nom">Auberge le Panier</span>
                                 <span class="hebergement-prix">Nuit à partir de 23<strong>€</strong></span>
@@ -163,16 +159,16 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <span class="load-more">Afficher plus</span>
-                </section>
+                </div>
                 <aside class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <section class="populaires-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg"
@@ -233,52 +229,52 @@
                                 </div>
                             </article>
                         </a>
-                    </div>
+                    </section>
                 </aside>
-            </div>
-            <div class="activities" id="activities">
+            </section>
+            <section class="activities" id="activities">
                 <div class="activities-title">
                     <h2>Activités à Marseille</h2>
                 </div>
-                <div class="activities-cards-liste">
-                    <div class="activities-card">
+                <div class="activities-cards">
+                    <article class="activities-card">
                         <img src="/images/activites/reno-laithienne.jpg" alt="Photo du Vieux Port de Marseille">
                         <span class="activities-card-name">Vieux-Port</span>
-                    </div>
-                    <div class="activities-card">
+                    </article>
+                    <article class="activities-card">
                         <img src="/images/activites/paul-hermann.jpg" alt="Photo du Vieux Port de Marseille">
                         <span class="activities-card-name">Fort de Pomègues</span>
-                    </div>
-                    <div class="activities-card">
+                    </article>
+                    <article class="activities-card">
                         <img src="/images/activites/kilyan-sockalingum.jpg" alt="Photo du Vieux Port de Marseille">
                         <span class="activities-card-name">Parc national des Calanques</span>
-                    </div>
-                    <div class="activities-card">
+                    </article>
+                    <article class="activities-card">
                         <img src="/images/activites/florian-wehde.jpg" alt="Photo du Vieux Port de Marseille">
                         <span class="activities-card-name">Notre-Dame-de-la-Garde</span>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
-            <section class="footer-container">
-                <div class="section-footer">
-                    <span class="footer-title">À Propos</span>
+            <section class="footer">
+                <div class="footer-column">
+                    <span class="footer-column-title">À Propos</span>
                     <ul>
                         <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales</a></li>
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
-                <div class="section-footer">
-                    <span class="footer-title">Nos hébergements</span>
+                <div class="footer-column">
+                    <span class="footer-column-title">Nos hébergements</span>
                     <ul>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                 </div>
-                <div class="section-footer">
-                    <span class="footer-title">Assistance</span>
+                <div class="footer-column">
+                    <span class="footer-column-title">Assistance</span>
                     <ul>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
