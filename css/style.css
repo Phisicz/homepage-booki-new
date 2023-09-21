@@ -678,8 +678,10 @@ a {
     .search-button::before {
         content: "\f002";
         font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
         font-size: 17px;
-        font-weight: 400;
+        line-height: 1px;
+        vertical-align: middle;
     }
 
     .filter-container {
