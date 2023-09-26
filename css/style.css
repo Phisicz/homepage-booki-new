@@ -145,7 +145,7 @@ header {
     margin-top: 15px;
 }
 
-.navbar a::before {
+.navbar-hebergements a::before, .navbar-activities a::before {
     content: "";
     display: inline-block;
     width: 100%;
@@ -325,7 +325,7 @@ a {
 
 .hebergement {
     border-radius: 20px;
-    height: 17vh;
+    height: 207px;
     gap: 4px;
     background-color: white;
     width: calc(33.33% - 20px);
@@ -446,11 +446,12 @@ a {
     flex-grow: 1;
     flex-basis: calc(25% - 30px);
     box-sizing: border-box;
+    height: 439px;
 }
 
 .activities-card img {
     width: 100%;
-    height: 32vh;
+    height: 380px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -459,14 +460,14 @@ a {
     display: flex;
     align-items: center;
     border-radius: 0px 20px;
-    padding: 20px 19px;
+    padding: 10px 19px;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     height: 2.5vh;
 }
 
-.footer {
+footer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -565,11 +566,19 @@ a {
         width: 100%;
     }
 
-    .activities-card img {
-        height: 17vh;
+    .activities-card {
+        height: 270px;
     }
 
-    .footer {
+    .activities-card img {
+        height: 200px;
+    }
+
+    .activities-card-title {
+        padding: 20px 19px;
+    }
+
+    footer {
         width: 100%;
     }
 
@@ -626,20 +635,20 @@ a {
         left: 0;
     }
 
-    .navbar ul::after {
+    .navbar-hebergements::before, .navbar-activities::before {
         content: "";
-        width: 50%;
+        width: 100%;
         height: 2px;
         background-color: var(--main-color);
         transform: scaleX(0);
         transform-origin: center top;
         transition: transform 0.3s ease;
         position: absolute;
-        top: 130px;
+        top: 66px;
         left: 0;
     }
 
-    .navbar ul:hover::after {
+    .navbar-hebergements:hover::before, .navbar-activities:hover::before {
         transform: scaleX(1);
     }
 
@@ -664,6 +673,10 @@ a {
     .search-icon i {
         color: black;
         text-align: center;
+    }
+
+    .search-input {
+        width: 100%;
     }
 
     .search-button {
@@ -765,7 +778,6 @@ a {
     .hebergement {
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
         width: 100%;
-        height: 100%;
     }
 
     .hebergement img {
@@ -797,6 +809,8 @@ a {
 
     .activities-card {
         width: 100%;
+        height: 200px;
+        flex-basis: 0;
     }
 
     .activities-card img {
@@ -804,7 +818,7 @@ a {
         object-fit: cover;
     }
 
-    .footer {
+    footer {
         width: 100%;
         flex-direction: column;
         margin-top: 40px;
