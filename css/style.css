@@ -342,11 +342,10 @@ a {
 .hebergement img {
     object-fit: cover;
     width: 100%;
-    height: 55%;
+    height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid white;
     box-sizing: border-box;
-    padding-bottom: 10px;
 }
 
 .hebergement-info {
@@ -783,11 +782,6 @@ footer {
     .hebergement {
         box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
         width: 100%;
-    }
-
-    .hebergement img {
-        height: 9.5vh;
-        object-fit: cover;
     }
 
     .hebergement-info {
