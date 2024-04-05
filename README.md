@@ -3,7 +3,7 @@
 Voici ma proposition de la **Homepage Booki** ! 👋
 
 ⬇️ Lien pour y accéder ⬇️
-https://phisicz.github.io/homepage-booki-new/
+https://homepage-booki-new.vercel.app/
 
 ---
 
